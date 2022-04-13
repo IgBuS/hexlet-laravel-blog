@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 @if ($errors->any())
     <div>
         <ul>
@@ -12,3 +14,4 @@
 {{ Form::text('name') }}<br>
 {{ Form::label('body', 'Содержание') }}
 {{ Form::textarea('body') }}<br>
+@endsection
